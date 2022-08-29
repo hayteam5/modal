@@ -1,0 +1,15 @@
+.btn {
+  border: solid 2px;
+  border-radius: 20px;
+  margin-left: 50%;
+  margin-top: 100px;
+  padding: 20px;
+  background: darkseagreen;
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 18px;
+
+  &:hover {
+    background: indianred;
+  }
+}

@@ -1,0 +1,66 @@
+<!--<style>
+  .modal {
+    width: 50%;
+    border: solid 1px gray;
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .btn {
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    background: darkseagreen;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 18px;
+    justify-self: center;
+
+
+  /*&:hover {
+     background: indianred;
+   }*/
+  }
+
+  input {
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+    width: 97%;
+  }
+
+  .block {
+    width: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+
+</style>-->
+
+<div class="modal" mat-dialog-content>
+  <mat-form-field appearance="fill">
+
+    <div>
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="data.title">
+    </div>
+
+    <div>
+      <mat-label>Description</mat-label>
+      <input matInput [(ngModel)]="data.description">
+    </div>
+    <button class="btn" mat-button (click)="closeModal()"> Add </button>
+
+  </mat-form-field>
+
+
+</div>
