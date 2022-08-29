@@ -47,20 +47,17 @@
 </style>-->
 
 <div class="modal" mat-dialog-content>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="standard">
 
-    <div>
-      <mat-label>Title</mat-label>
-      <input matInput [(ngModel)]="data.title">
+    <div class="title-container">
+      <input class="input" placeholder="Title" [(ngModel)]="data.title">
     </div>
 
-    <div>
-      <mat-label>Description</mat-label>
-      <input matInput [(ngModel)]="data.description">
+    <div class="description-container">
+      <textarea class="input" cols="30" rows="10" placeholder="Description" [(ngModel)]="data.description"></textarea>
     </div>
+
     <button class="btn" mat-button (click)="closeModal()"> Add </button>
 
   </mat-form-field>
-
-
 </div>
