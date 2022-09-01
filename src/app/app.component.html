@@ -2,7 +2,7 @@
   <button class="btn" mat-button (click)="showModal()">Add a new post</button>
 </div>
 
-<div *ngIf="title">
-  <h2>{{title}}</h2>
-  <p>{{description}}</p>
+<div *ngIf="title" class="card">
+  <h1>{{title}}</h1>
+  <h3>{{description}}</h3>
 </div>

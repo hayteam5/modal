@@ -10,6 +10,7 @@ import {ModalComponent} from "./modal/modal.component";
 export class AppComponent {
   title?: string
   description?: string
+  posts?: []
 
   constructor (public dialog: MatDialog) {}
 
@@ -20,7 +21,8 @@ export class AppComponent {
     })
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('Closed')
+      this.title = result.title
+      this.description = result.description
     })
   }
 }
