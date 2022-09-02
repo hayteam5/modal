@@ -10,6 +10,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -17,6 +18,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
   declarations: [
     AppComponent,
     ModalComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
